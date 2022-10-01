@@ -19,7 +19,7 @@ Sample Output :
 
 <p>
 Today is Friday.<br />
-Current time is 10 PM : 30 : 38
+Current time is 12 PM : 12 : 22
 </p>
 <details><summary><b>Solution:</b></summary>
 <p>

@@ -17,6 +17,8 @@ Today is Friday.<br />
 Current time is 10 PM : 30 : 38
 </p>
 <details><summary><b>Solution:</b></summary>
+<p>
+
 ```javascript
 function getTime(today) {
   const ampm = today.getHours() > 12 ? 'pm' : 'am';
@@ -26,25 +28,25 @@ function getTime(today) {
   const seconds =
     today.getSeconds() < 10 ? `0${today.getSeconds()}` : today.getSeconds();
 
-return `${hours} ${ampm} : ${minutes} : ${seconds}`;
+  return `${hours} ${ampm} : ${minutes} : ${seconds}`;
 }
 
 function getDay(today) {
-return [
-'Sunday',
-'Monday',
-'Tuesday',
-'Wednesday',
-'Thursday',
-'Friday',
-'Saturday',
-][today.getday()];
+  return [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ][today.getDay()];
 }
 
 const d = new Date();
 console.log(`Today is ${getDay(d)}`);
 console.log(`Current time is ${getTime(d)}`);
+```
 
-```
+<p>
 </details>
-```

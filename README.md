@@ -9,7 +9,8 @@
 | 1   | [Write a JavaScript program to display the current day and time in the following format](#write-a-javascript-program-to-display-the-current-day-and-time-in-the-following-format) |
 | 2   | [Write a JavaScript program to get the current date](#write-a-javascript-program-to-get-the-current-date)                                                                         |
 | 3   | [Write a JavaScript program to find the area of a triangle](#write-a-javascript-program-to-find-the-area-of-a-triangle)                                                           |
-| 3   | [Write a JavaScript program to calculate days left until next Christmas](#write-a-javascript-program-to-calculate-days-left-until-next-christmas)                                 |
+| 4   | [Write a JavaScript program to calculate days left until next Christmas](#write-a-javascript-program-to-calculate-days-left-until-next-christmas)                                 |
+| 5   | [Write a JavaScript exercise to get the extension of a filename](#write-a-javascript-exercise-to-get-the-extension-of-a-filename)                                                 |
 
 ### Write a JavaScript program to display the current day and time in the following format
 

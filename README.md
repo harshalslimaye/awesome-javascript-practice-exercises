@@ -4,11 +4,12 @@
 
 ### Table of Contents
 
-| No. | Questions                                                                                                                                                                           |
-| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | [Write a JavaScript program to display the current day and time in the following format.](#write-a-javascript-program-to-display-the-current-day-and-time-in-the-following-format.) |
+| No. | Questions                                                                                                                                                                         |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [Write a JavaScript program to display the current day and time in the following format](#write-a-javascript-program-to-display-the-current-day-and-time-in-the-following-format) |
+| 2   | [Write a JavaScript program to get the current date](#write-a-javascript-program-to-get-the-current-date)                                                                         |
 
-1. ### Write a JavaScript program to display the current day and time in the following format.
+### Write a JavaScript program to display the current day and time in the following format
 
 Sample Output :
 
@@ -46,6 +47,45 @@ function getDay(today) {
 const d = new Date();
 console.log(`Today is ${getDay(d)}`);
 console.log(`Current time is ${getTime(d)}`);
+```
+
+<p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Write a JavaScript program to get the current date
+
+mm-dd-yyyy <br />
+mm/dd/yyyy <br />
+dd-mm-yyyy <br />
+dd/mm/yyyy
+
+</p>
+<details><summary><b>Solution:</b></summary>
+<p>
+
+```javascript
+function getDate(date, format, separator) {
+  const data = {
+    yyyy: today.getFullYear(),
+    mm: today.getMonth() < 10 ? `0${today.getMonth()}` : today.getMonth(),
+    dd: today.getDate() < 10 ? `0${today.getDate()}` : today.getDate(),
+  };
+
+  return format
+    .split(separator)
+    .map((char) => data[char])
+    .join(separator);
+}
+const today = new Date();
+
+console.log(getDate(today, 'mm-dd-yyyy', '-'));
+console.log(getDate(today, 'mm/dd/yyyy', '/'));
+console.log(getDate(today, 'dd-mm-yyyy', '-'));
+console.log(getDate(today, 'dd/mm/yyyy', '/'));
 ```
 
 <p>

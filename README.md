@@ -11,6 +11,7 @@
 | 3   | [Write a JavaScript program to find the area of a triangle](#write-a-javascript-program-to-find-the-area-of-a-triangle)                                                           |
 | 4   | [Write a JavaScript program to calculate days left until next Christmas](#write-a-javascript-program-to-calculate-days-left-until-next-christmas)                                 |
 | 5   | [Write a JavaScript exercise to get the extension of a filename](#write-a-javascript-exercise-to-get-the-extension-of-a-filename)                                                 |
+| 6   | [Write a JavaScript program to compare two objects](#write-a-javascript-program-to-compare-two-objects)                                                                           |
 
 ### Write a JavaScript program to display the current day and time in the following format
 
@@ -161,6 +162,45 @@ console.log(getExtension('hello-world.txt'));
 console.log(getExtension('awesome.component.ts'));
 console.log(getExtension('readme.md'));
 console.log(getExtension('user.jsx'));
+```
+
+<p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Write a JavaScript program to compare two objects
+
+</p>
+<details><summary><b>Solution:</b></summary>
+<p>
+
+```javascript
+function matches(source, target) {
+  return Object.keys(source).every(
+    (key) => target.hasOwnProperty(key) && target[key] === source[key]
+  );
+}
+
+const car = {
+  color: 'red',
+  type: 'suv',
+};
+
+p1 = {
+  name: 'john doe',
+  car,
+};
+p2 = {
+  name: 'john doe',
+  car,
+};
+console.log(matches(p1, p2)); // true
+console.log(matches(p1, { color: 'red', type: 'suv' })); // false
+console.log(matches(p1, { name: 'john doe', car })); // true
+console.log(matches(p1, { name: 'jane doe', car })); // false
 ```
 
 <p>

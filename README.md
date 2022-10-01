@@ -9,6 +9,7 @@
 | 1   | [Write a JavaScript program to display the current day and time in the following format](#write-a-javascript-program-to-display-the-current-day-and-time-in-the-following-format) |
 | 2   | [Write a JavaScript program to get the current date](#write-a-javascript-program-to-get-the-current-date)                                                                         |
 | 3   | [Write a JavaScript program to find the area of a triangle](#write-a-javascript-program-to-find-the-area-of-a-triangle)                                                           |
+| 3   | [Write a JavaScript program to calculate days left until next Christmas](#write-a-javascript-program-to-calculate-days-left-until-next-christmas)                                 |
 
 ### Write a JavaScript program to display the current day and time in the following format
 
@@ -110,6 +111,31 @@ function areaOfTriangle(a, b, c) {
 }
 
 console.log(areaOfTriangle(5, 6, 7));
+```
+
+<p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Write a JavaScript program to calculate days left until next Christmas
+
+</p>
+<details><summary><b>Solution:</b></summary>
+<p>
+
+```javascript
+function daysUntilChristmas() {
+  const today = new Date();
+  const difference = new Date(today.getFullYear(), 11, 25) - new Date();
+  const oneDayInNilliseconds = 1000 * 3600 * 24;
+
+  return Math.ceil(difference / oneDayInNilliseconds);
+}
+
+console.log(daysUntilChristmas());
 ```
 
 <p>

@@ -8,6 +8,7 @@
 | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | [Write a JavaScript program to display the current day and time in the following format](#write-a-javascript-program-to-display-the-current-day-and-time-in-the-following-format) |
 | 2   | [Write a JavaScript program to get the current date](#write-a-javascript-program-to-get-the-current-date)                                                                         |
+| 3   | [Write a JavaScript program to find the area of a triangle](#write-a-javascript-program-to-find-the-area-of-a-triangle)                                                           |
 
 ### Write a JavaScript program to display the current day and time in the following format
 
@@ -86,6 +87,29 @@ console.log(getDate(today, 'mm-dd-yyyy', '-'));
 console.log(getDate(today, 'mm/dd/yyyy', '/'));
 console.log(getDate(today, 'dd-mm-yyyy', '-'));
 console.log(getDate(today, 'dd/mm/yyyy', '/'));
+```
+
+<p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Write a JavaScript program to find the area of a triangle
+
+</p>
+<details><summary><b>Solution:</b></summary>
+<p>
+
+```javascript
+function areaOfTriangle(a, b, c) {
+  const s = (a + b + c) / 2;
+
+  return Math.sqrt(s * (s - a) * (s - b) * (s - c));
+}
+
+console.log(areaOfTriangle(5, 6, 7));
 ```
 
 <p>

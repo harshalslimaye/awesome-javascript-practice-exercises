@@ -140,3 +140,27 @@ console.log(daysUntilChristmas());
 
 <p>
 </details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Write a JavaScript exercise to get the extension of a filename.
+
+</p>
+<details><summary><b>Solution:</b></summary>
+<p>
+
+```javascript
+function getExtension(filename) {
+  return filename.substring(filename.lastIndexOf('.') + 1);
+}
+
+console.log(getExtension('hello-world.txt'));
+console.log(getExtension('awesome.component.ts'));
+console.log(getExtension('readme.md'));
+console.log(getExtension('user.jsx'));
+```
+
+<p>
+</details>

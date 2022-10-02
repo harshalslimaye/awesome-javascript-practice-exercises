@@ -13,6 +13,7 @@
 | 5   | [Write a JavaScript exercise to get the extension of a filename](#write-a-javascript-exercise-to-get-the-extension-of-a-filename)                                                 |
 | 6   | [Write a JavaScript program to compare two objects](#write-a-javascript-program-to-compare-two-objects)                                                                           |
 | 7   | [Write a JavaScript program to convert an array of objects into CSV string](#write-a-javascript-program-to-convert-an-array-of-objects-into-csv-string)                           |
+| 8   | [Write a JavaScript program to convert a number to array of digits](#write-a-javascript-program-to-convert-a-number-to-array-of-digits)                                           |
 
 ### Write a JavaScript program to display the current day and time in the following format
 
@@ -249,6 +250,31 @@ console.log(
     { name: 'France', city: 'Paris', continent: 'Europe' },
   ])
 );
+```
+
+<p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Write a JavaScript program to convert a number to array of digits
+
+</p>
+<details><summary><b>Solution:</b></summary>
+<p>
+
+```javascript
+function numberToArray(num) {
+  if (typeof num === 'number') {
+    return `${num}`.split('').map((n) => parseInt(n));
+  } else {
+    return NaN;
+  }
+}
+
+console.log(numberToArray('dsc'));
 ```
 
 <p>

@@ -274,7 +274,8 @@ function numberToArray(num) {
   }
 }
 
-console.log(numberToArray('dsc'));
+console.log(numberToArray(1234)); // [1, 2, 3, 4]
+console.log(numberToArray('dsc')); // NaN
 ```
 
 <p>

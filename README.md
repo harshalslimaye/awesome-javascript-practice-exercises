@@ -14,6 +14,7 @@
 | 6   | [Write a JavaScript program to compare two objects](#write-a-javascript-program-to-compare-two-objects)                                                                           |
 | 7   | [Write a JavaScript program to convert an array of objects into CSV string](#write-a-javascript-program-to-convert-an-array-of-objects-into-csv-string)                           |
 | 8   | [Write a JavaScript program to convert a number to array of digits](#write-a-javascript-program-to-convert-a-number-to-array-of-digits)                                           |
+| 9   | [Write a JavaScript program to capitalize first letter of a string](#write-a-javascript-program-to-capitalize-first-letter-of-a-string)                                           |
 
 ### Write a JavaScript program to display the current day and time in the following format
 
@@ -276,6 +277,27 @@ function numberToArray(num) {
 
 console.log(numberToArray(1234)); // [1, 2, 3, 4]
 console.log(numberToArray('dsc')); // NaN
+```
+
+<p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Write a JavaScript program to capitalize first letter of a string
+
+</p>
+<details><summary><b>Solution:</b></summary>
+<p>
+
+```javascript
+function ucfirst(str) {
+  return `${str.charAt(0).toUpperCase()}${str.substring(1)}`;
+}
+
+console.log(ucfirst('javascript'));
 ```
 
 <p>

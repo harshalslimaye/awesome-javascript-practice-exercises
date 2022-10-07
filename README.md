@@ -1,4 +1,4 @@
-# Awesome Javascript Practice Exercises
+# 🔥Awesome Javascript Practice Exercises
 
 > Click :star: if you like the project.
 
@@ -15,6 +15,8 @@
 | 7   | [Write a JavaScript program to convert an array of objects into CSV string](#write-a-javascript-program-to-convert-an-array-of-objects-into-csv-string)                           |
 | 8   | [Write a JavaScript program to convert a number to array of digits](#write-a-javascript-program-to-convert-a-number-to-array-of-digits)                                           |
 | 9   | [Write a JavaScript program to capitalize first letter of a string](#write-a-javascript-program-to-capitalize-first-letter-of-a-string)                                           |
+| 10  | [Write a JavaScript program to clone an array](#write-a-javascript-program-to-determine-if-a-variable-is-array)                                                                   |
+| 11  | [Write a JavaScript program to clone an array](#write-a-javascript-program-to-clone-an-array)                                                                                     |
 
 ### Write a JavaScript program to display the current day and time in the following format
 
@@ -298,6 +300,71 @@ function ucfirst(str) {
 }
 
 console.log(ucfirst('javascript'));
+```
+
+<p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Write a JavaScript program to determine if a variable is array
+
+</p>
+<details><summary><b>Solution:</b></summary>
+<p>
+
+```javascript
+function is_array(param) {
+  return Object.getPrototypeOf(param) === Array.prototype;
+}
+
+console.log(is_array([1, 2, 3, 4])); // true
+console.log(is_array('abcd')); // false
+```
+
+<p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Write a JavaScript program to clone an array
+
+</p>
+<details><summary><b>Solution:</b></summary>
+<p>
+
+```javascript
+// using spread operator
+function cloneArr(arr) {
+  return [...arr];
+}
+
+console.log([1, 2, 3, 4, 5]);
+
+// using for slice
+function cloneArr(arr) {
+  return arr.slice();
+}
+
+console.log([1, 2, 3, 4, 5]);
+
+// using JSON object
+function cloneArr(arr) {
+  return JSON.parse(JSON.stringify(arr));
+}
+
+console.log([1, 2, 3, 4, 5]);
+
+// using Array.from
+function cloneArr(arr) {
+  return Array.from(arr);
+}
+
+console.log([1, 2, 3, 4, 5]);
 ```
 
 <p>

@@ -17,6 +17,7 @@
 | 9   | [Write a JavaScript program to capitalize first letter of a string](#write-a-javascript-program-to-capitalize-first-letter-of-a-string)                                           |
 | 10  | [Write a JavaScript program to determine if a variable is array](#write-a-javascript-program-to-determine-if-a-variable-is-array)                                                                   |
 | 11  | [Write a JavaScript program to clone an array](#write-a-javascript-program-to-clone-an-array)                                                                                     |
+| 12  | [Write a JavaScript program to reverse a string](#write-a-javascript-program-to-reverse-a-string)                                                                                     |
 
 ### Write a JavaScript program to display the current day and time in the following format
 
@@ -369,3 +370,31 @@ console.log([1, 2, 3, 4, 5]);
 
 <p>
 </details>
+
+### Write a JavaScript program to reverse a string
+
+Sample Output :
+
+<p>
+Today is Friday.<br />
+Current time is 12 PM : 12 : 22
+</p>
+<details><summary><b>Solution:</b></summary>
+<p>
+
+```javascript
+function reverse(str) {
+  return str.split('').reverse().join('');
+}
+
+// Test the function
+const input = "Hello, World!";
+const reversed = reverse(input);
+console.log(reversed); 
+// Output: "!dlroW ,olleH"
+```
+
+<p>
+</details>
+
+---

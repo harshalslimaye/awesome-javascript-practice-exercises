@@ -371,8 +371,12 @@ console.log([1, 2, 3, 4, 5]);
 <p>
 </details>
 
-### Write a JavaScript program to reverse a string
+---
 
+**[⬆ Back to Top](#table-of-contents)**
+### Write a JavaScript program to reverse a string
+<details><summary><b>Solution:</b></summary>
+<p>
 ```javascript
 function reverse(str) {
   return str.split('').reverse().join('');

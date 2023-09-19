@@ -373,15 +373,6 @@ console.log([1, 2, 3, 4, 5]);
 
 ### Write a JavaScript program to reverse a string
 
-Sample Output :
-
-<p>
-Today is Friday.<br />
-Current time is 12 PM : 12 : 22
-</p>
-<details><summary><b>Solution:</b></summary>
-<p>
-
 ```javascript
 function reverse(str) {
   return str.split('').reverse().join('');

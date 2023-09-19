@@ -15,7 +15,7 @@
 | 7   | [Write a JavaScript program to convert an array of objects into CSV string](#write-a-javascript-program-to-convert-an-array-of-objects-into-csv-string)                           |
 | 8   | [Write a JavaScript program to convert a number to array of digits](#write-a-javascript-program-to-convert-a-number-to-array-of-digits)                                           |
 | 9   | [Write a JavaScript program to capitalize first letter of a string](#write-a-javascript-program-to-capitalize-first-letter-of-a-string)                                           |
-| 10  | [Write a JavaScript program to clone an array](#write-a-javascript-program-to-determine-if-a-variable-is-array)                                                                   |
+| 10  | [Write a JavaScript program to determine if a variable is array](#write-a-javascript-program-to-determine-if-a-variable-is-array)                                                                   |
 | 11  | [Write a JavaScript program to clone an array](#write-a-javascript-program-to-clone-an-array)                                                                                     |
 
 ### Write a JavaScript program to display the current day and time in the following format
